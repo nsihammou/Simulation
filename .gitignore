@@ -1,0 +1,19 @@
+# Specifies files or directories that the Git version control system should not track.
+# You can add model-specific ignore rules, e.g. to exclude large or frequently updated binary files.
+# For the format of .gitignore rules, refer to the Quintiq version control documentation or search the internet; it is a standard Git feature.
+
+# Do not store these settings in version control, they are machine/user specific
+**/UserSettings/**
+**/LibUserSettings/**
+Local*.properties
+
+# Excel files will quickly let repository sizes grow out of control.
+*.xls*
+
+# The lock file is created/used by Quintiq components to synchronize which component can write to the model; it does not need to be in version control.
+/Lock
+# Files commonly left behind by merge tools or text editors (if not configured to clean up those files)
+*.rej
+*.orig
+*.bak
+*.tmp
